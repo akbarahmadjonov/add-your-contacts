@@ -1,0 +1,72 @@
+/*** GENERAL CSS ***/
+
+html {
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  transition: all 0.4s ease;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  margin: 0;
+  background-color: var(--main-bg-color);
+}
+
+main {
+  flex-grow: 1;
+}
+
+img {
+  vertical-align: middle;
+  object-fit: cover;
+}
+
+/*** GENERAL END ***/
+
+:root {
+  --main-bg-color: #fff;
+  --main-bg-color2: #fff;
+  --main-title-color: #22343d;
+}
+
+.dark {
+  --main-bg-color: #1f2e35;
+  --main-bg-color2: #fff;
+  --main-title-color: #fff;
+}
+
+.contact {
+  color: var(--main-title-color);
+}
+
+.row-up {
+  background-color: var(--main-bg-color2);
+}
+
+.boot {
+  width: 450px;
+}
+
+.btns {
+  display: flex;
+  justify-content: center;
+}
+
+.dark-mode {
+  display: inline-block;
+  border: none;
+  background-color: transparent;
+}
+
+.dark-mode img {
+  width: 50px;
+  height: 50px;
+}

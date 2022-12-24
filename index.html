@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact page</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+
+
+    <span class="text-danger">Dark mode/light mode available in this website</span>
+    <h1 class="text-center mt-5 contact">Contact book</h1>
+
+    <div class="container">
+        <div class="btns">
+            <button class="dark-mode js-mode" type="submit"><img src="./images/dark-mode.svg" alt="Dark mode"></button>
+        </div>
+        <form class="mt-5 js-form">
+            <div class="row shadow p-5 row-up">
+                <div class="col-12 col-6 col-lg-6">
+                    <h1>Get in touch <i class="fa-regular fa-hand"></i></h1>
+                    <label for="exampleInputEmail1" class="form-label mt-4">Your name</label>
+                    <input type="text" class="form-control js-input" id="exampleInputEmail1"
+                        aria-describedby="emailHelp" placeholder="Name" autofocus>
+                    <label for="exampleInputEmail1" class="form-label mt-2">Your relationship</label>
+                    <select class="form-select js-select" id="exampleInputEmail1">
+                        <option selected disabled>Relationship</option>
+                        <option value="Friend">Friend</option>
+                        <option value="Neighbour">Neighbour</option>
+                        <option value="Father">Father</option>
+                        <option value="Mother">Mother</option>
+                        <option value="Sister">Sister</option>
+                    </select>
+                    <label for="exampleInputEmail1" class="form-label mt-2">Phone number</label>
+                    <input type="text" class="form-control js-input-number">
+                    <span class="text-danger d-none d-block js-phone-error">Please enter at least 13 numbers or
+                        less</span>
+                    <button class="btn btn-primary mt-3" type="submit">Add contact <i
+                            class="fa-solid fa-user-plus"></i></button>
+                </div>
+                <div class="col-12 col-6 col-lg-6 mt-3">
+                    <h1 class="text-center">Your contacts <i class="fa-regular fa-address-book"></i></h1>
+                    <ul class="list-group js-list ms-5 mt-4 position-sticky"></ul>
+                </div>
+            </div>
+    </div>
+    </form>
+    </div>
+
+
+
+
+
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
