@@ -82,9 +82,11 @@ elForm.addEventListener("submit", function (evt) {
     num: elInputNumber.value,
   };
 
-  if (elInputNumber.value.length > 13) {
+  if (elInputNumber.value.length > 13 || elInputNumber.value.length < 9) {
     elPhoneError.classList.remove("d-none");
     return false;
+  } else {
+    elPhoneError.classList.add("d-none");
   }
   if (
     elInput.value !== "" &&
